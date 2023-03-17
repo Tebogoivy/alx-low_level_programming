@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
+char a;
+int b;
+long int c;
+long long int d;
+float f;
+
 printf("Size of char: %ld byte(s)\n", sizeof(char));
 printf("Size of short: %ld byte(s)\n", sizeof(short));
 printf("Size of int: %ld byte(s)\n", sizeof(int));
