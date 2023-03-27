@@ -1,15 +1,18 @@
 /**
- * swap_int - Swaps the values of two integers
- * @a: Pointer to an integer
- * @b: Pointer to an integer
+ * _strlen - Returns the length of a string
+ * @s: Pointer to a string
  *
- * Return: void
+ * Return: Length of the string
  */
-void swap_int(int *a, int *b)
+int _strlen(char *s)
 {
-int temp;
+    int length = 0;
 
-temp = *a;
-*a = *b;
-*b = temp;
+    while (*s != '\0')
+    {
+        length++;
+        s++;
+    }
+
+    return length;
 }
